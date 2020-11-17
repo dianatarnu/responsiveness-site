@@ -1,0 +1,162 @@
+body{
+  background-color: mistyrose;
+  margin: 0px;
+}
+
+#title{
+  line-height: 70px;
+  background: rosybrown;
+  color: ivory;
+  font-weight: bold;
+  text-decoration: underline;
+  border-style: groove;
+  border-color: indianred;
+  text-align: center;
+  font-size: 35px;
+}
+
+header p{
+  margin-bottom: 20px;
+  padding: 30px;
+  text-indent: 0px;
+  font-size: 20px;
+  color: indianred;
+  text-align: center;
+}
+
+/* end of header */
+
+
+
+/* start of ingredients */
+
+main{
+  display: flex;
+  flex-flow: wrap;
+  margin: 30px;
+  justify-content: center;
+}
+
+main div{
+  margin: 10px;
+  background-color: ivory;
+  border-style: groove;
+  border-radius: 5%;
+  border-color: antiquewhite;
+  font-size: 15px;
+}
+
+.title2{
+  font-size: 20px;
+  text-align: center;
+  color: indianred;
+  text-decoration: underline;
+  padding: 0px;
+}
+
+main ul li:before {
+  content: '\2764';
+}
+
+.unordered{
+  list-style-type: none;
+}
+
+.ordered, .unordered{
+  margin-right: 25px;
+}
+
+
+
+
+/* start of images */
+
+div{
+  margin: 40px 20px;
+}
+
+div p:first-child{
+  font-size: 20px;
+  padding-left: 50px;
+}
+
+.images{
+  display: flex;
+  flex-flow: row;
+  list-style-type: none;
+}
+
+img {
+  max-width:100%;
+  height:auto;
+}
+
+#single, #multiple{
+  justify-content: center;  
+}
+
+#pad{
+  padding-right:20px;
+}
+
+
+
+/* start of receips */
+.receipt{
+  margin-top: 40px;
+}
+
+#underlined{
+  font-size: 20px;
+  padding-left: 50px;
+  text-decoration: underline;
+  color: indianred;
+}
+
+.unordered li:before {
+  content: '\2764';
+}
+
+
+@media only screen and (max-width: 400px){
+    body {
+    background-color: darkkhaki;
+  }
+  
+  #title{
+  background: darkolivegreen;
+  color: white;
+  border-color: darkgreen;
+  }
+  
+  header p{
+    color: cornsilk;
+    font-size: 15px;
+  }
+}
+
+
+
+@media only screen and (min-width: 750px){
+    body {
+    background-color: tan;
+  }
+  
+  #underlined{
+    font-size: 25px;
+    font-family: italic;
+    font-weight: bold;
+  }
+  
+  #block{
+    display: flex;
+    justify-content: space-around;
+    margin: 0px;
+    padding: 10px;
+    font-size:15px;
+  }
+}
+
+
+
+
